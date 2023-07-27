@@ -87,14 +87,6 @@ resumeButton.addEventListener('click', function () {
 
 
 
-
-
-
-
-
-
-
-
 // Get the reference to the mono button by its ID
 const monoButton = document.getElementById('mono-button');
 
@@ -113,25 +105,6 @@ monoButton.addEventListener('click', toggleStereoMono);
 
 // Add event listener to the stereo button for toggling stereo/mono
 stereoButton.addEventListener('click', toggleStereoMono);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
