@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Other meta tags, title, or other head elements go here -->
+    <link rel="stylesheet" href="./audio.css">
+</head>
+
+<body>
+
+    <audio id="my-audio" src="./media/A Song About The Girl That Never Existed.wav"></audio>
+
+    <div>
+        <button type="button" id="play-button">
+            <img src="./media/media-playback-start.svg" alt="Button Image">
+            Play
+        </button>
+        <!-- Initially hide the pause button -->
+        <button type="button" id="pause-button" style="display: none;">
+            <img src="./media/media-playback-pause.svg" alt="Button Image">
+            Pause
+        </button>
+        <!-- Initially hide the resume button -->
+        <button type="button" id="resume-button" style="display: none;">
+            <img src="./media/media-resume.svg" alt="Button Image">
+            Resume
+        </button>
+    </div>
+    <div>
+        <!-- Volume slider -->
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        <!-- Volume percentage display -->
+        <h1 id="volume-percentage">100%</h1>
+    </div>
+    <div>
+        <!-- Use a single <h1> tag for both current time and duration -->
+        <h1 id="current-time">00:00 / 00:00</h1>
+        <!-- Progress bar -->
+        <progress id="progress-bar" value="0" max="1"></progress>
+    </div>
+    <script src="./audio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+audio {
+    border: 1px solid black;
+}
+
+button {
+    width: 70px;
+}
+
+/* Styling for the panning percentage display */
+#current-time {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Styling for the progress bar */
+#progress-bar {
+    width: 80%;
+}
+
+/* Styling for the panning percentage display */
+#volume-percentage {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Styling for the volume slider */
+
+#volume-slider {
+    width: 80%;
+}
+
+/* Styling for the panning percentage display */
+#panning-percentage {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Styling for the panning slider */
+#panning-slider {
+    width: 80%;
+}
