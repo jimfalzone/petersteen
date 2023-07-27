@@ -86,6 +86,64 @@ resumeButton.addEventListener('click', function () {
 
 
 
+
+
+
+
+
+
+
+
+
+// Get the reference to the mono button by its ID
+const monoButton = document.getElementById('mono-button');
+
+// Get the reference to the stereo button by its ID
+const stereoButton = document.getElementById('stereo-button');
+
+// Function to toggle between stereo and mono modes
+function toggleStereoMono() {
+    // Toggle the mode and update the button display
+    monoButton.style.display = monoButton.style.display === 'none' ? 'block' : 'none';
+    stereoButton.style.display = stereoButton.style.display === 'none' ? 'block' : 'none';
+}
+
+// Add event listener to the mono button for toggling stereo/mono
+monoButton.addEventListener('click', toggleStereoMono);
+
+// Add event listener to the stereo button for toggling stereo/mono
+stereoButton.addEventListener('click', toggleStereoMono);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Function to update the volume and percentage display when the volume slider is changed
 function updateVolume() {
     const volumeValue = parseFloat(this.value);

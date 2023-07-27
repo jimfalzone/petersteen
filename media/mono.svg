@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg1307" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ns1="http://sozi.baierouge.fr" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+	 style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{opacity:0.15;fill:none;stroke:url(#path2848_00000062153077220540505220000010348945105111407523_);stroke-width:2;stroke-linecap:square;stroke-linejoin:round;enable-background:new    ;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path2850_00000106116182028245830880000011223103299276562349_);}
+	
+		.st2{fill:none;stroke:url(#path2852_00000049193203375369999100000007793255460964965807_);stroke-linecap:square;stroke-linejoin:round;}
+	.st3{fill:none;stroke:url(#path2854_00000093883537360838373490000002397228237846972075_);stroke-linecap:square;}
+	.st4{opacity:0.5;fill:#F7F7F7;enable-background:new    ;}
+	.st5{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="use2844" transform="translate(-12.972)" inkscape:r_cx="true" inkscape:r_cy="true">
+	
+		<linearGradient id="path2848_00000037669471134616035630000014435747504649571744_" gradientUnits="userSpaceOnUse" x1="106.8463" y1="-7.5561" x2="106.7662" y2="-28.8047" gradientTransform="matrix(1.1033 0 0 -1.0549 -80.8465 4.7075)">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.4845"/>
+	</linearGradient>
+	
+		<path id="path2848" inkscape:r_cx="true" inkscape:r_cy="true" style="opacity:0.15;fill:none;stroke:url(#path2848_00000037669471134616035630000014435747504649571744_);stroke-width:2;stroke-linecap:square;stroke-linejoin:round;enable-background:new    ;" d="
+		M29.1,12.9v22.2h15.7V12.9C44.8,12.9,29.1,12.9,29.1,12.9z"/>
+	
+		<radialGradient id="path2850_00000116222787365277769310000002882230503132750731_" cx="-1232.7708" cy="-6.9284" r="11" gradientTransform="matrix(6.336099e-06 -1.072 -3.5433 1.250700e-06 0.888 -1290.7247)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#F7F7F7"/>
+		<stop  offset="1" style="stop-color:#CCD0C7"/>
+	</radialGradient>
+	
+		<path id="path2850" inkscape:r_cx="true" inkscape:r_cy="true" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#path2850_00000116222787365277769310000002882230503132750731_);" d="
+		M29.9,13.5v21h14.2v-21C44.1,13.5,29.9,13.5,29.9,13.5z"/>
+	
+		<linearGradient id="path2852_00000072277417363003379920000000001591905927410604_" gradientUnits="userSpaceOnUse" x1="194.9643" y1="-58.1926" x2="194.9643" y2="-41.0576" gradientTransform="matrix(1 0 0 -1.0044 -157.972 -18.976)">
+		<stop  offset="0" style="stop-color:#BABDB6"/>
+		<stop  offset="1" style="stop-color:#555753"/>
+	</linearGradient>
+	
+		<path id="path2852" inkscape:r_cx="true" inkscape:r_cy="true" style="fill:none;stroke:url(#path2852_00000072277417363003379920000000001591905927410604_);stroke-linecap:square;stroke-linejoin:round;" d="
+		M29.9,13.5v21.1h14.2V13.5C44.1,13.5,29.9,13.5,29.9,13.5z"/>
+	
+		<linearGradient id="path2854_00000027574252639540412980000016653816166704227508_" gradientUnits="userSpaceOnUse" x1="50.2079" y1="34.1963" x2="49.1106" y2="-3.2747" gradientTransform="matrix(1 0 0 -1 -12.9724 49.9057)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	
+		<path id="path2854" inkscape:r_cx="true" inkscape:r_cy="true" style="fill:none;stroke:url(#path2854_00000027574252639540412980000016653816166704227508_);stroke-linecap:square;" d="
+		M31.7,14.5v19h10.7v-19C42.3,14.5,31.7,14.5,31.7,14.5z"/>
+	<path id="path2856" inkscape:r_cx="true" inkscape:r_cy="true" sodipodi:nodetypes="ccccc" class="st4" d="M32.6,15.1v10.1l8.9-0.6
+		V15C41.5,15,32.6,15.1,32.6,15.1z"/>
+</g>
+<circle class="st5" cx="23.8" cy="19.3" r="3"/>
+<ellipse transform="matrix(7.467069e-02 -0.9972 0.9972 7.467069e-02 -5.8236 49.9643)" class="st5" cx="24" cy="28.1" rx="4" ry="4"/>
+</svg>
