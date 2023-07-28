@@ -32,13 +32,33 @@ button {
 #current-time {
     text-align: center;
     font-size: 18px;
+    padding-top: 10px;
     margin-bottom: 5px;
 }
 
-/* Styling for the progress bar */
-#progress-bar {
-    width: 80%;
+
+
+/* Styles for the progress bar wrapper */
+.progress-wrapper {
+    width: 400px;
+    height: 400px;
+    background-image: url('./media/songimage3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+/* Styling for the custom progress bar */
+.progress-bar {
+    width: 400px;
+    height: 272px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: black;
+    margin-left: -2px;
+}
+
+
 
 /* Styling for the panning percentage display */
 #volume-percentage {
@@ -64,3 +84,4 @@ button {
 #panning-slider {
     width: 80%;
 }
+

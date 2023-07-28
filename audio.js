@@ -2,6 +2,7 @@
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
 document.addEventListener('DOMContentLoaded', function () {
+
     // Get the reference to the audio element by its ID
     const audioElement = document.getElementById('my-audio');
 
@@ -48,7 +49,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Update the current time display and progress bar at regular intervals
-    audioElement.addEventListener('timeupdate', updateCurrentTimeDisplay);
+    audioElement.addEventListener('timeupdate', function () {
+        updateCurrentTimeDisplay();
+        const progress = audioElement.currentTime / audioElement.duration;
+        updateProgressBar(progress);
+    });
+
+    // Update the progress bar width based on the current progress value
+    function updateProgressBar(progress) {
+        progressBar.style.width = `${progress * 100}%`;
+    }
 
     // Add an event listener for the 'click' event on the play button
     playButton.addEventListener('click', function () {
@@ -131,20 +141,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Trigger the initial update to display the default panning percentage (0%)
     updatePanning.call(panningSlider);
 
-
-
-
-
-
-
-
     // Get the reference to the canvas element
     const canvas = document.getElementById('waveform');
     const canvasContext = canvas.getContext('2d');
 
     // Create an AnalyserNode to extract data for visualization
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 8192;
+    analyser.fftSize = 32768;
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
 
@@ -188,45 +191,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start drawing the waveform
     drawWaveform();
 });
-
-
-
-
-
-
-// Function to draw the still image of the waveform on the new canvas
-function drawStillWaveform() {
-    const stillCanvas = document.getElementById('still-waveform');
-    const stillCanvasContext = stillCanvas.getContext('2d');
-
-    analyser.getByteTimeDomainData(dataArray);
-
-    stillCanvasContext.fillStyle = 'rgb(255, 255, 255)';
-    stillCanvasContext.fillRect(0, 0, stillCanvas.width, stillCanvas.height);
-
-    stillCanvasContext.lineWidth = 2;
-    stillCanvasContext.strokeStyle = 'rgb(0, 0, 0)';
-    stillCanvasContext.beginPath();
-
-    const sliceWidth = stillCanvas.width * 1.0 / bufferLength;
-    let x = 0;
-
-    for (let i = 0; i < bufferLength; i++) {
-        const v = dataArray[i] / 128.0;
-        const y = v * stillCanvas.height / 2;
-
-        if (i === 0) {
-            stillCanvasContext.moveTo(x, y);
-        } else {
-            stillCanvasContext.lineTo(x, y);
-        }
-
-        x += sliceWidth;
-    }
-
-    stillCanvasContext.lineTo(stillCanvas.width, stillCanvas.height / 2);
-    stillCanvasContext.stroke();
-}
-
-// Call the drawStillWaveform function to generate the still image
-drawStillWaveform();
