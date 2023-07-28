@@ -4,6 +4,7 @@ audio {
 
 button {
     width: 70px;
+    min-height: 110px;
 }
 
 #mono-stereo-toggle {
