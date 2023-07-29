@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.08 153.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #7158a6;
+        font-family: ShagadelicBold, Shagadelic;
+        font-size: 150px;
+      }
+    </style>
+  </defs>
+  <g id="Component_1_1" data-name="Component 1 1">
+    <g id="t" class="cls-1">
+      <text class="cls-2" transform="translate(0 138.84)"><tspan x="0" y="0">t</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'TattooInk';
+    /* Font family name you want to use */
+    src: url('./fonts/ShagadelicBold-jrKj.ttf') format('truetype');
+    /* Path to the .ttf file */
+}
+
+/* Example usage of the custom font */
+body {
+    font-family: 'TattooInk', Arial, sans-serif;
+    /* Use the custom font as the primary font */
+}
+
+#play-button {
+    margin-top: 500px;
+}
+
+
 audio {
     border: 1px solid black;
 }
@@ -85,6 +103,7 @@ button {
     width: 100%;
 }
 
-h1 {
-    font-family: 'ZCOOL KuaiLe', sans-serif;;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'TattooInk', Arial, sans-serif;
 }

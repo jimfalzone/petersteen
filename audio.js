@@ -1,3 +1,24 @@
+// Get the SVG element
+const svg = document.getElementById('Layer_2');
+const textElement = document.querySelector('.cls-1');
+const initialViewBox = svg.getAttribute('viewBox').split(' ');
+const initialHeight = parseFloat(initialViewBox[3]);
+
+// Function to update the viewBox during the animation
+function updateViewBox() {
+    const scale = parseFloat(getComputedStyle(textElement).transform.match(/[-+]?([0-9]*\.[0-9]+|[0-9]+)/)[0]);
+    const newHeight = initialHeight * scale;
+    initialViewBox[1] = (newHeight - initialHeight).toString(); // Adjust the y position based on the scale
+    initialViewBox[3] = newHeight.toString();
+    svg.setAttribute('viewBox', initialViewBox.join(' '));
+    requestAnimationFrame(updateViewBox);
+}
+
+// Start updating the viewBox
+updateViewBox();
+
+
+
 // Create an AudioContext instance
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
