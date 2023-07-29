@@ -6,6 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./audio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,28 +35,37 @@
                     <div>
                         <img src="./media/petersteen.png" width="150px" alt="">
                     </div>
+                    <div class="mt-5 text-center">
+                        <h1>Peter</h1>
+                        <img src="./media/purpletiger.svg" width="200px">
+                        <h1>Steen</h1>
+                    </div>
                 </div>
 
 
-
                 <div>
-                    <!-- Use a single <h1> tag for both current time and duration -->
+                    <div>
+                        <!-- Use a single <h1> tag for both current time and duration -->
 
-                    <!-- Progress bar -->
-                    <div class="progress-wrapper">
-                        <h1 id="current-time">00:00 / 00:00</h1>
-                        <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
+                        <!-- Progress bar -->
+                        <div class="progress-wrapper mt-3">
+                            <h1 id="current-time">00:00 / 00:00</h1>
+                            <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
+                        </div>
+
+                        <!-- Volume percentage display -->
+                        <h1 id="volume-percentage">100%</h1>
+                        <!-- Volume slider -->
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                        <h1 id="volume-percentage">volume</h1>
+
+                        <!-- Panning percentage display -->
+                        <h1 class="mt-5" id="panning-percentage">0%</h1>
+                        <!-- Panning slider -->
+                        <input type="range" id="panning-slider" min="-1" max="1" step="0.01" value="0">
+                        <h1 id="panning-percentage"> <span style="float: left;">L</span> pan <span
+                                style="float: right">R</span></h1>
                     </div>
-
-                    <!-- Volume percentage display -->
-                    <h1 id="volume-percentage">100%</h1>
-                    <!-- Volume slider -->
-                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
-
-                    <!-- Panning percentage display -->
-                    <h1 id="panning-percentage">0%</h1>
-                    <!-- Panning slider -->
-                    <input type="range" id="panning-slider" min="-1" max="1" step="0.01" value="0">
                 </div>
             </div>
 
@@ -61,7 +73,7 @@
 
             <div class="col">
                 <!-- Canvas for waveform display -->
-                <canvas id="waveform" width="600" height="600"></canvas>
+                <canvas id="waveform" width="800" height="895"></canvas>
             </div>
 
 

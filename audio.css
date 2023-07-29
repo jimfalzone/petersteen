@@ -70,7 +70,7 @@ button {
 /* Styling for the volume slider */
 
 #volume-slider {
-    width: 80%;
+    width: 100%;
 }
 
 /* Styling for the panning percentage display */
@@ -82,6 +82,9 @@ button {
 
 /* Styling for the panning slider */
 #panning-slider {
-    width: 80%;
+    width: 100%;
 }
 
+h1 {
+    font-family: 'ZCOOL KuaiLe', sans-serif;;
+}
