@@ -11,9 +11,57 @@ body {
     /* Use the custom font as the primary font */
 }
 
-#play-button {
-    margin-top: 500px;
+.transport-button {
+    width: 4%;
 }
+
+
+
+
+/* Define the initial position of the button (off-screen to the left) */
+.transport-buttons {
+    position: fixed;
+    /* Change to 'fixed' for a sticky effect */
+    top: 15em;
+    /* Adjust this value to set the vertical position */
+    right: -100%;
+    /* Keep it off-screen to the left */
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-name: buttonAnimation;
+    animation-fill-mode: forwards;
+    /* Add this property here */
+    margin-left: 100%;
+    /* Add this property here with the value from 0% keyframe */
+    width: 0%;
+    /* Add this property here with the value from 0% keyframe */
+    background-color: transparent;
+    /* Add this property here with the value from 0% keyframe */
+}
+
+@keyframes buttonAnimation {
+    0% {
+        margin-left: 100%;
+        width: 150%;
+    }
+
+    100% {
+        margin-left: 80%;
+        width: 200%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 audio {
@@ -80,15 +128,14 @@ button {
 
 /* Styling for the panning percentage display */
 #volume-percentage {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /* Styling for the volume slider */
 
 #volume-slider {
-    width: 100%;
+    margin-left: 10px;
 }
 
 /* Styling for the panning percentage display */
@@ -104,6 +151,20 @@ button {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'TattooInk', Arial, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'TattooInk', Arial, sans-serif;
+}
+
+
+
+
+
+input[type="range"] {
+    appearance: slider-vertical;
+    accent-color: #25594A;
 }

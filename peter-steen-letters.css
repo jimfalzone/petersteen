@@ -1,185 +1,213 @@
-    /* Set the initial position and size of the SVG wrapper */
-    #svg-wrapper {
-        width: 100%;
-        /* Occupies the entire column width */
+.steen {
+    margin-top: -6.5em;
+}
+
+.peter {
+    margin-top: 9em;
+}
+
+/* Custom CSS to make rows full-width */
+.svg-row,
+.steen {
+    width: 100vw;
+    /* Use 100vw to make the row the full width of the viewport */
+    /* margin-left: 10%; */
+    /* To compensate for the default Bootstrap container padding */
+    /* margin-right: -15px; */
+    /* To compensate for the default Bootstrap container padding */
+}
+
+.svg-row .col-12,
+.steen .col-12 {
+    padding: 0;
+    /* Remove padding from the columns to fill the entire row width */
+}
+
+
+
+
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    /* Align SVG to the top of the wrapper */
+    margin-left: -21em;
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
         height: 200px;
         /* Initial height */
-        animation: shrinkAnimation 2s ease-in-out forwards;
-        transform-origin: top;
-        display: flex;
-        align-items: flex-start;
-        /* Align SVG to the top of the wrapper */
-        margin-left: -15em;
     }
 
-    /* SVG styles */
-    #Layer_1-2 .cls-1 {
-        fill: #7158a6;
-        font-family: ShagadelicBold, Shagadelic;
-        font-size: 200px;
-        isolation: isolate;
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
     }
-
-    .svg-row {
-        min-height: 30em;
-    }
-
-    /* Shrink animation for the SVG wrapper */
-    @keyframes shrinkAnimation {
-        0% {
-            transform: scale(2);
-            height: 200px;
-            /* Initial height */
-        }
-
-        100% {
-            transform: scale(0.1);
-            /* Adjust the scale factor as needed */
-            height: 50px;
-            /* Target height */
-        }
-    }
+}
 
 
 
 
 
-    /* Set the initial position and size of the SVG wrapper */
-    #svg-wrapper2 {
-        width: 100%;
-        /* Occupies the entire column width */
-        height: 130%;
-        /* Initial height */
-        animation: shrinkAnimation 2s ease-in-out forwards;
-        transform-origin: top;
-        display: flex;
-        align-items: flex-start;
-        margin-left: -5em;
-        margin-top: -5em;
-        /* Align SVG to the top of the wrapper */
-    }
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper2 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 130%;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: -9em;
+    margin-top: -5.5em;
+    /* Align SVG to the top of the wrapper */
+}
 
-    /* SVG styles */
-    #Layer_1-2 .cls-1 {
-        fill: #7158a6;
-        font-family: ShagadelicBold, Shagadelic;
-        font-size: 200px;
-        isolation: isolate;
-    }
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
 
-    .svg-row {
-        min-height: 30em;
-    }
+.svg-row {
+    min-height: 30em;
+}
 
-    /* Shrink animation for the SVG wrapper */
-    @keyframes shrinkAnimation {
-        0% {
-            transform: scale(2);
-            height: 200px;
-            /* Initial height */
-        }
-
-        100% {
-            transform: scale(0.1);
-            /* Adjust the scale factor as needed */
-            height: 50px;
-            /* Target height */
-        }
-    }
-
-
-
-
-    /* Set the initial position and size of the SVG wrapper */
-    #svg-wrapper3 {
-        width: 100%;
-        /* Occupies the entire column width */
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
         height: 200px;
         /* Initial height */
-        animation: shrinkAnimation 2s ease-in-out forwards;
-        transform-origin: top;
-        display: flex;
-        align-items: flex-start;
-        margin-left: 6.5em;
-        margin-top: -.12em;
-        /* Align SVG to the top of the wrapper */
     }
 
-    /* SVG styles */
-    #Layer_1-2 .cls-1 {
-        fill: #7158a6;
-        font-family: ShagadelicBold, Shagadelic;
-        font-size: 150px;
-        isolation: isolate;
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
+    }
+}
+
+
+
+
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper3 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5.5em;
+    margin-top: -.12em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 150px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
+        height: 100px;
+        /* Initial height */
     }
 
-    .svg-row {
-        min-height: 30em;
+    100% {
+        transform: scale(0.005);
+        /* Adjust the scale factor as needed */
+        height: 30px;
+        /* Target height */
     }
-
-    /* Shrink animation for the SVG wrapper */
-    @keyframes shrinkAnimation {
-        0% {
-            transform: scale(2);
-            height: 100px;
-            /* Initial height */
-        }
-
-        100% {
-            transform: scale(0.005);
-            /* Adjust the scale factor as needed */
-            height: 30px;
-            /* Target height */
-        }
-    }
+}
 
 
 
 
 
 
-    /* Set the initial position and size of the SVG wrapper */
-    #svg-wrapper4 {
-        width: 100%;
-        /* Occupies the entire column width */
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper4 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15.15em;
+    margin-top: -5em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
         height: 200px;
         /* Initial height */
-        animation: shrinkAnimation 2s ease-in-out forwards;
-        transform-origin: top;
-        display: flex;
-        align-items: flex-start;
-        margin-left: 13.15em;
-        margin-top: -5em;
-        /* Align SVG to the top of the wrapper */
     }
 
-    /* SVG styles */
-    #Layer_1-2 .cls-1 {
-        fill: #7158a6;
-        font-family: ShagadelicBold, Shagadelic;
-        font-size: 200px;
-        isolation: isolate;
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
     }
-
-    .svg-row {
-        min-height: 30em;
-    }
-
-    /* Shrink animation for the SVG wrapper */
-    @keyframes shrinkAnimation {
-        0% {
-            transform: scale(2);
-            height: 200px;
-            /* Initial height */
-        }
-
-        100% {
-            transform: scale(0.1);
-            /* Adjust the scale factor as needed */
-            height: 50px;
-            /* Target height */
-        }
-    }
+}
 
 
 
@@ -189,45 +217,288 @@
 
 
 
-    /* Set the initial position and size of the SVG wrapper */
-    #svg-wrapper5 {
-        width: 100%;
-        /* Occupies the entire column width */
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper5 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 26.5em;
+    margin-top: -2em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
         height: 200px;
         /* Initial height */
-        animation: shrinkAnimation 2s ease-in-out forwards;
-        transform-origin: top;
-        display: flex;
-        align-items: flex-start;
-        margin-left: 22.5em;
-        margin-top: -2em;
-        /* Align SVG to the top of the wrapper */
     }
 
-    /* SVG styles */
-    #Layer_1-2 .cls-1 {
-        fill: #7158a6;
-        font-family: ShagadelicBold, Shagadelic;
-        font-size: 200px;
-        isolation: isolate;
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#svg-wrapper6 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    /* Align SVG to the top of the wrapper */
+    margin-left: -20em;
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
+        height: 200px;
+        /* Initial height */
     }
 
-    .svg-row {
-        min-height: 30em;
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
+    }
+}
+
+
+
+
+
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper7 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 130%;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: -11.8em;
+    margin-top: -7.5em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
+        height: 200px;
+        /* Initial height */
     }
 
-    /* Shrink animation for the SVG wrapper */
-    @keyframes shrinkAnimation {
-        0% {
-            transform: scale(2);
-            height: 200px;
-            /* Initial height */
-        }
-
-        100% {
-            transform: scale(0.1);
-            /* Adjust the scale factor as needed */
-            height: 50px;
-            /* Target height */
-        }
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
     }
+}
+
+
+
+
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper8 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: -4.5em;
+    margin-top: -8em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 150px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
+        height: 100px;
+        /* Initial height */
+    }
+
+    100% {
+        transform: scale(0.005);
+        /* Adjust the scale factor as needed */
+        height: 30px;
+        /* Target height */
+    }
+}
+
+
+
+
+
+
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper9 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 8em;
+    margin-top: -5.5em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
+        height: 200px;
+        /* Initial height */
+    }
+
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Set the initial position and size of the SVG wrapper */
+#svg-wrapper10 {
+    width: 100%;
+    /* Occupies the entire column width */
+    height: 200px;
+    /* Initial height */
+    animation: shrinkAnimation 2s ease-in-out forwards;
+    transform-origin: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 21.5em;
+    margin-top: -6em;
+    /* Align SVG to the top of the wrapper */
+}
+
+/* SVG styles */
+#Layer_1-2 .cls-1 {
+    fill: #7158a6;
+    font-family: ShagadelicBold, Shagadelic;
+    font-size: 200px;
+    isolation: isolate;
+}
+
+.svg-row {
+    min-height: 30em;
+}
+
+/* Shrink animation for the SVG wrapper */
+@keyframes shrinkAnimation {
+    0% {
+        transform: scale(2);
+        height: 200px;
+        /* Initial height */
+    }
+
+    100% {
+        transform: scale(0.1);
+        /* Adjust the scale factor as needed */
+        height: 50px;
+        /* Target height */
+    }
+}

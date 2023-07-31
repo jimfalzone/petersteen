@@ -7,188 +7,65 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./audio.css">
     <link rel="stylesheet" href="./peter-steen-letters.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="./media/purpletiger.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tattoo+Ink&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <div class="container-fluid">
         <!-- Row for the SVG element -->
-        <div class="row svg-row">
-            <div class="col-12">
-
-
-
+        <div class="row svg-row peter">
+            <div class="col">
                 <!-- Wrapper for the SVG -->
                 <div id="svg-wrapper">
-                    <!-- Your SVG code -->
-                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.86 205.04">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #7158a6;
-                                    font-family: ShagadelicBold, Shagadelic;
-                                    font-size: 200px;
-                                    isolation: isolate;
-                                }
-                            </style>
-                        </defs>
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <text class="cls-1" transform="translate(.02 185.12)">
-                                <tspan x="0" y="0">P</tspan>
-                            </text>
-                        </g>
-                    </svg>
+                    <img src="./media/petersteen/1.svg" height="4100em" alt="">
                 </div>
-
                 <div id="svg-wrapper2">
-                    <img src="./media/petersteen/2.svg" height="3900em" alt="">
+                    <img src="./media/petersteen/2.svg" height="3800em" alt="">
                 </div>
-
-
                 <div id="svg-wrapper3">
                     <img src="./media/petersteen/3.svg" height="3000em" alt="">
                 </div>
-
-
                 <div id="svg-wrapper4">
                     <img src="./media/petersteen/4.svg" height="3000em" alt="">
                 </div>
-
-
                 <div id="svg-wrapper5">
                     <img src="./media/petersteen/5.svg" height="2400em" alt="">
                 </div>
-
-
-
             </div>
         </div>
 
-        <!-- Other content -->
-        <div class="row">
-            <div class="col-12">
-                <audio id="my-audio" src="./media/A Song About The Girl That Never Existed.mp3"></audio>
-                <!-- Your other content here -->
-                <!-- ... -->
-            </div>
-        </div>
 
-        <!-- Row for other content -->
-        <div class="row">
-            <div class="col-12">
-                <div>
-                    <button type="button" class="btn" id="play-button">
-                        <img src="./media/media-playback-start.svg" alt="Button Image">
-                        Play
-                    </button>
-                    <!-- Initially hide the pause button -->
-                    <button type="button" class="btn" id="pause-button" style="display: none;">
-                        <img src="./media/media-playback-pause.svg" alt="Button Image">
-                        Pause
-                    </button>
-                    <!-- Initially hide the resume button -->
-                    <button type="button" class="btn" id="resume-button" style="display: none;">
-                        <img src="./media/media-resume.svg" alt="Button Image">
-                        Resume
-                    </button>
-                    <div>
-                        <img src="./media/petersteen.png" width="150px" alt="">
-                    </div>
-                    <div class="mt-5 text-center">
-                        <h1>Peter</h1>
-                        <img src="./media/purpletiger.svg" width="200px">
-                        <h1>Steen</h1>
-                    </div>
-                    <div>
-                        <img src="./media/bandana.png " alt="">
-                    </div>
-                </div>
 
-                <div>
-                    <div>
-                        <!-- Use a single <h1> tag for both current time and duration -->
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper mt-3">
-                            <h1 id="current-time">00:00 / 00:00</h1>
-                            <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
-                        </div>
-
-                        <!-- Volume percentage display -->
-                        <h1 id="volume-percentage">100%</h1>
-                        <!-- Volume slider -->
-                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
-                        <h1 id="volume-percentage">volume</h1>
-
-                        <!-- Panning percentage display -->
-                        <h1 class="mt-5" id="panning-percentage">0%</h1>
-                        <!-- Panning slider -->
-                        <input type="range" id="panning-slider" min="-1" max="1" step="0.01" value="0">
-                        <h1 id="panning-percentage"> <span style="float: left;">L</span> pan <span
-                                style="float: right">R</span></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Canvas for waveform display -->
-        <div class="row">
-            <div class="col-12">
-                <canvas id="waveform" width="1400" height="895"></canvas>
-            </div>
-        </div>
-    </div>
-
-    <!-- Original JavaScript file -->
-    <script src="./audio.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
-
-</head>
-
-<body>
-    <div class="container-fluid">
-        <!-- Row for the SVG element -->
-        <div class="row">
-            <div class="col-12">
+        <div class="row svg-row steen">
+            <div class="col">
                 <!-- Wrapper for the SVG -->
-                <div id="svg-wrapper">
-                    <!-- Your SVG code -->
-                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.86 205.04">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #7158a6;
-                                    font-family: ShagadelicBold, Shagadelic;
-                                    font-size: 200px;
-                                    isolation: isolate;
-                                }
-                            </style>
-                        </defs>
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <text class="cls-1" transform="translate(.02 185.12)">
-                                <tspan x="0" y="0">P</tspan>
-                            </text>
-                        </g>
-                    </svg>
+                <div id="svg-wrapper6">
+                    <img src="./media/petersteen/6.svg" height="2400em" alt="">
+                </div>
+                <div id="svg-wrapper7">
+                    <img src="./media/petersteen/7.svg" height="3200em" alt="">
+                </div>
+                <div id="svg-wrapper8">
+                    <img src="./media/petersteen/8.svg" height="4100em" alt="">
+                </div>
+                <div id="svg-wrapper9">
+                    <img src="./media/petersteen/9.svg" height="4500em" alt="">
+                </div>
+                <div id="svg-wrapper10">
+                    <img src="./media/petersteen/10.svg" height="5000em" alt="">
                 </div>
             </div>
         </div>
 
+
+
+
+
+
         <!-- Other content -->
         <div class="row">
             <div class="col-12">
-                <audio id="my-audio" src="./media/A Song About The Girl That Never Existed.mp3"></audio>
+                <audio id="my-audio" src="./media/audio/A song with gtr.wav"></audio>
                 <!-- Your other content here -->
                 <!-- ... -->
             </div>
@@ -197,33 +74,48 @@
         <!-- Row for other content -->
         <div class="row">
             <div class="col-12">
-                <div>
-                    <button type="button" class="btn" id="play-button">
+                <div id="transport-wrapper" class="transport-buttons">
+                    <button type="button" class="btn transport-button" id="play-button">
                         <img src="./media/media-playback-start.svg" alt="Button Image">
-                        Play
+                        <h2>Play</h2>
                     </button>
                     <!-- Initially hide the pause button -->
-                    <button type="button" class="btn" id="pause-button" style="display: none;">
+                    <button type="button" class="btn transport-button" id="pause-button" style="display: none;">
                         <img src="./media/media-playback-pause.svg" alt="Button Image">
-                        Pause
+                        <h2>Pause</h2>
                     </button>
                     <!-- Initially hide the resume button -->
-                    <button type="button" class="btn" id="resume-button" style="display: none;">
+                    <button type="button" class="btn transport-button" id="resume-button" style="display: none;">
                         <img src="./media/media-resume.svg" alt="Button Image">
-                        Resume
+                        <h2>Resume</h2>
                     </button>
-                    <div>
-                        <img src="./media/petersteen.png" width="150px" alt="">
+                    <div id="volume-controller"> <!-- Volume percentage display -->
+                        <h1 id="volume-percentage"></h1>
+                        <!-- Volume slider -->
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value=".8">
+                        <h1 id="volume-percentage">volume</h1>
                     </div>
-                    <div class="mt-5 text-center">
+
+
+                    <!-- <div class="mt-5 text-center">
                         <h1>Peter</h1>
                         <img src="./media/purpletiger.svg" width="200px">
                         <h1>Steen</h1>
-                    </div>
+                    </div> -->
+
+                </div>
+
+                <div>
                     <div>
                         <img src="./media/bandana.png " alt="">
                     </div>
+                    <div>
+                        <img src="./media/petersteen.png" width="150px" alt="">
+                    </div>
                 </div>
+
+
+
 
                 <div>
                     <div>
@@ -238,7 +130,7 @@
                         <!-- Volume percentage display -->
                         <h1 id="volume-percentage">100%</h1>
                         <!-- Volume slider -->
-                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value=".8">
                         <h1 id="volume-percentage">volume</h1>
 
                         <!-- Panning percentage display -->

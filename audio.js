@@ -1,25 +1,4 @@
-// Get the SVG element
-const svg = document.getElementById('Layer_2');
-const textElement = document.querySelector('.cls-1');
-const initialViewBox = svg.getAttribute('viewBox').split(' ');
-const initialHeight = parseFloat(initialViewBox[3]);
-
-// Function to update the viewBox during the animation
-function updateViewBox() {
-    const scale = parseFloat(getComputedStyle(textElement).transform.match(/[-+]?([0-9]*\.[0-9]+|[0-9]+)/)[0]);
-    const newHeight = initialHeight * scale;
-    initialViewBox[1] = (newHeight - initialHeight).toString(); // Adjust the y position based on the scale
-    initialViewBox[3] = newHeight.toString();
-    svg.setAttribute('viewBox', initialViewBox.join(' '));
-    requestAnimationFrame(updateViewBox);
-}
-
-// Start updating the viewBox
-updateViewBox();
-
-
-
-// Create an AudioContext instance
+// Create an AudioContext instance if it doesn't exist
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -81,6 +60,26 @@ document.addEventListener('DOMContentLoaded', function () {
         progressBar.style.width = `${progress * 100}%`;
     }
 
+
+
+
+
+
+    // Function to update the button display based on the audio element state
+    function updateButtonDisplay() {
+        if (audioElement.paused) {
+            playButton.style.display = 'block';
+            pauseButton.style.display = 'none';
+            resumeButton.style.display = 'none';
+        } else {
+            playButton.style.display = 'none';
+            pauseButton.style.display = 'block';
+            resumeButton.style.display = 'none';
+            console.log('pause');
+        }
+
+    }
+
     // Add an event listener for the 'click' event on the play button
     playButton.addEventListener('click', function () {
         if (audioContext.state === 'suspended') {
@@ -88,18 +87,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         audioElement.play();
 
-        // Hide the play button and show the pause button
-        playButton.style.display = 'none';
-        pauseButton.style.display = 'block';
+        // Update the button display
+        updateButtonDisplay();
     });
 
     // Add an event listener for the 'click' event on the pause button
     pauseButton.addEventListener('click', function () {
         audioElement.pause();
 
-        // Hide the pause button and show the resume button
-        pauseButton.style.display = 'none';
-        resumeButton.style.display = 'block';
+        // Update the button display
+        updateButtonDisplay();
     });
 
     // Add an event listener for the 'click' event on the resume button
@@ -109,10 +106,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         audioElement.play();
 
-        // Hide the resume button and show the pause button
-        resumeButton.style.display = 'none';
-        pauseButton.style.display = 'block';
+        // Update the button display
+        updateButtonDisplay();
     });
+
+    // Add an event listener for the 'ended' event on the audio element
+    audioElement.addEventListener('ended', function () {
+        // When the song is over, update the button to "playButton"
+        updateButtonDisplay();
+    });
+
+
+
+
+
+
+
+
+
+
 
     // Function to update the volume and percentage display when the volume slider is changed
     function updateVolume() {
@@ -122,11 +134,11 @@ document.addEventListener('DOMContentLoaded', function () {
         gainNode.gain.value = volumeValue;
 
         // Calculate the percentage value based on the volume position
-        const percentageValue = Math.round(volumeValue * 100);
+        // const percentageValue = Math.round(volumeValue * 100);
 
         // Update the volume percentage display
-        const volumePercentage = document.getElementById('volume-percentage');
-        volumePercentage.textContent = `${percentageValue}%`;
+        // const volumePercentage = document.getElementById('volume-percentage');
+        // volumePercentage.textContent = `${percentageValue}%`;
     }
 
     // Add an event listener for the 'input' event on the volume slider
@@ -212,3 +224,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start drawing the waveform
     drawWaveform();
 });
+
+
+
+
+
+// Function to log the Y-axis position of the DOM element on scroll
+function logScrollPosition() {
+    const element = document.documentElement; // Replace with the desired DOM element if needed
+    const yPosition = element.scrollTop || window.pageYOffset;
+    console.log('Y-axis position:', yPosition);
+}
+
+// Attach the scroll event listener to the window
+window.addEventListener('scroll', logScrollPosition);
