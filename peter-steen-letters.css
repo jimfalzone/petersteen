@@ -17,11 +17,35 @@
     /* To compensate for the default Bootstrap container padding */
 }
 
+
+/* Media query for larger screens */
+@media (max-width: 1300px) {
+
+    .svg-row,
+    .steen {
+        width: 140vw;
+        /* Use 100vw to make the row the full width of the viewport */
+        /* margin-left: 10%; */
+        /* To compensate for the default Bootstrap container padding */
+        /* margin-right: -15px; */
+        /* To compensate for the default Bootstrap container padding */
+    }
+}
+
+
+
+
+
+
+
+
 .svg-row .col-12,
 .steen .col-12 {
     padding: 0;
     /* Remove padding from the columns to fill the entire row width */
 }
+
+
 
 
 
@@ -44,7 +68,7 @@
 #Layer_1-2 .cls-1 {
     fill: #7158a6;
     font-family: ShagadelicBold, Shagadelic;
-    font-size: 200px;
+    font-size: 400em;
     isolation: isolate;
 }
 
@@ -56,14 +80,14 @@
 @keyframes shrinkAnimation {
     0% {
         transform: scale(2);
-        height: 200px;
+        height: 200em;
         /* Initial height */
     }
 
     100% {
-        transform: scale(0.1);
+        transform: scale(0.5);
         /* Adjust the scale factor as needed */
-        height: 50px;
+        height: 400em;
         /* Target height */
     }
 }

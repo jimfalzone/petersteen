@@ -167,4 +167,22 @@ h6 {
 input[type="range"] {
     appearance: slider-vertical;
     accent-color: #25594A;
+    cursor: pointer;
+
+}
+
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid #8684bf;
+    border-radius: 50%;
+    outline: 10px solid #8684bf;
+    outline-offset: 0.125rem;
+}
+
+/******** Firefox ********/
+input[type="range"]:focus::-moz-range-thumb {
+    border: 1px solid #8684bf;
+    border-radius: 50%;
+    outline: 10px solid #8684bf;
+    outline-offset: 0.125rem;
 }
