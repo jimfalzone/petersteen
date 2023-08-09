@@ -186,3 +186,14 @@ input[type="range"]:focus::-moz-range-thumb {
     outline: 10px solid #8684bf;
     outline-offset: 0.125rem;
 }
+
+
+
+.logodiv {
+    display: inline-block;
+    position: fixed;
+}
+
+#logo {
+    height: 150px;
+}
