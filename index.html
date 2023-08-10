@@ -11,35 +11,40 @@
 </head>
 
 <body>
-    <div class="logodiv">
-        <img src="./media/purpletiger.png" id="logo" alt="">
-    </div>
+
+
+
+
+    <audio id="my-audio" src="./media/audio/The Girl From UCLA.wav"></audio>
+
 
 
 
     <div class="container-fluid">
-        <!-- Row for the SVG element -->
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="./media/whitetiger.png" id="logo" alt="">
+            </div>
+
+            <div class="col-9 pl-0">
+                <canvas id="waveform" width="1050" height="195"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
         <div class="row svg-row peter">
             <div class="col">
-                <!-- Wrapper for the SVG -->
                 <div id="svg-wrapper">
-                    <h2 style="color: #7158A6; font-size:430em;">Peter</h2>
+                    <h2 style="color: #7158A6; font-size:35em;">Peter Steen</h2>
                 </div>
-
-                <!-- <div id="svg-wrapper2">
-                    <h2 style="color: #7158A6; font-size:218em;">e</h2>
-                </div>
-                <div id="svg-wrapper3">
-                    <h2 style="color: #7158A6; font-size:175em;">t</h2>
-                </div>
-                <div id="svg-wrapper4">
-                    <h2 style="color: #7158A6; font-size:175em;">e</h2>
-                </div>
-                <div id="svg-wrapper5">
-                    <h2 style="color: #7158A6; font-size:145em;">r</h2>
-                </div> -->
-
-
             </div>
         </div>
 
@@ -47,24 +52,9 @@
 
         <div class="row svg-row steen">
             <div class="col">
-                <!-- Wrapper for the SVG -->
                 <div id="svg-wrapper2">
-                    <h2 style="color: #25594A; font-size:430em;">Steen</h2>
+                    <h2 style="color: #25594A; font-size:20em;">"The Girl From UCLA"</h2>
                 </div>
-
-                <!-- <div id="svg-wrapper7">
-                    <h2 style="color: #25594A; font-size:193em;">t</h2>
-                </div>
-                <div id="svg-wrapper8">
-                    <h2 style="color: #25594A; font-size:246em;">e</h2>
-                </div>
-                <div id="svg-wrapper9">
-                    <h2 style="color: #25594A; font-size:271em;">e</h2>
-                </div>
-                <div id="svg-wrapper10">
-                    <h2 style="color: #25594A; font-size:305em;">n</h2>
-                </div> -->
-
             </div>
         </div>
 
@@ -73,14 +63,7 @@
 
 
 
-        <!-- Other content -->
-        <div class="row">
-            <div class="col-12">
-                <audio id="my-audio" src="./media/audio/A song with gtr.wav"></audio>
-                <!-- Your other content here -->
-                <!-- ... -->
-            </div>
-        </div>
+
 
         <!-- Row for other content -->
         <div class="row">
@@ -106,26 +89,35 @@
                         <input type="range" id="volume-slider" min="0" max="1" step="0.01" value=".8">
                     </div>
                     <div>
-                        <h1 id="volume-percentage" class="ms-5" >volume</h1>
+                        <h1 id="volume-percentage" class="ms-5">volume</h1>
                     </div>
+
+                    <div class="progress-wrapper mt-3">
+                        <h1 id="current-time">00:00 / 00:00</h1>
+                        <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Row for other content -->
+        <div class="row">
+            <div class="col-12">
+                <div id="transport-wrapper" class="transport-buttons">
+
 
 
                     <!-- <div class="mt-5 text-center">
-                        <h1>Peter</h1>
-                        <img src="./media/purpletiger.svg" width="200px">
-                        <h1>Steen</h1>
-                    </div> -->
+                                <h1>Peter</h1>
+                                <img src="./media/purpletiger.svg" width="200px">
+                                <h1>Steen</h1>
+                            </div> -->
 
                 </div>
 
-                <div>
-                    <!-- <div>
-                        <img src="./media/bandana.png " alt="">
-                    </div> -->
-                    <div>
-                        <img src="./media/petersteen.png" width="150px" alt="">
-                    </div>
-                </div>
+
 
 
 
@@ -134,11 +126,7 @@
                     <div>
                         <!-- Use a single <h1> tag for both current time and duration -->
 
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper mt-3">
-                            <h1 id="current-time">00:00 / 00:00</h1>
-                            <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
-                        </div>
+
 
                         <!-- Volume percentage display -->
                         <h1 id="volume-percentage">100%</h1>
@@ -150,8 +138,8 @@
                         <h1 class="mt-5" id="panning-percentage">0%</h1>
                         <!-- Panning slider -->
                         <input type="range" id="panning-slider" min="-1" max="1" step="0.01" value="0">
-                        <h1 id="panning-percentage"> <span style="float: left;">L</span> pan <span
-                                style="float: right">R</span></h1>
+                        <h1 id="panning-percentage"> <span style="float: left;">L</span> pan <span style="float: right">R</span>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -163,13 +151,13 @@
                 <canvas id="waveform" width="1400" height="895"></canvas>
             </div>
         </div>
-    </div>
+        </div>
 
-    <!-- Original JavaScript file -->
-    <script src="./audio.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</body>
+        <!-- Original JavaScript file -->
+        <script src="./audio.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        </body>
 
-</html>
+        </html>

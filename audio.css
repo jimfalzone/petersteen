@@ -9,10 +9,19 @@
 body {
     font-family: 'TattooInk', Arial, sans-serif;
     /* Use the custom font as the primary font */
+    background-color: black;
 }
 
 .transport-button {
     width: 4%;
+}
+
+.peter-photo {
+    background-image:url("./media/petersteen.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-left: 20em;
+
 }
 
 
@@ -197,3 +206,11 @@ input[type="range"]:focus::-moz-range-thumb {
 #logo {
     height: 150px;
 }
+
+
+
+        #waveform {
+            background-color: black;
+            color: black;
+            /* Set the background color to black */
+        }

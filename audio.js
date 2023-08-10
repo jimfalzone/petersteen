@@ -192,11 +192,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function drawWaveform() {
         analyser.getByteTimeDomainData(dataArray);
 
-        canvasContext.fillStyle = 'rgb(255, 255, 255)';
+        canvasContext.fillStyle = 'rgb(0, 0, 0)';
         canvasContext.fillRect(0, 0, canvas.width, canvas.height);
 
         canvasContext.lineWidth = 2;
-        canvasContext.strokeStyle = 'rgb(0, 0, 0)';
+        canvasContext.strokeStyle = 'rgb(134, 132, 191)';
         canvasContext.beginPath();
 
         const sliceWidth = canvas.width * 1.0 / bufferLength;
