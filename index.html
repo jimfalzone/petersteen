@@ -20,13 +20,20 @@
 
     <div class="container-fluid">
         <div class="row align-items-center">
+
             <div class="col-2">
                 <img src="./media/whitetiger.png" id="logo" alt="">
             </div>
 
-            <div class="col-10 pl-0">
-                <canvas id="waveform" width="1500" height="205"></canvas>
+            <div class="col-8 pl-0">
+                <canvas id="waveform" width="1050" height="205"></canvas>
             </div>
+
+            <div class="col-2 thegirl">
+                <img src="./media/thegirlfromucla.png" id="logo" alt="">
+            </div>
+
+
         </div>
     </div>
 
@@ -71,8 +78,8 @@
                     <div id="volume-controller"> <!-- Volume percentage display -->
                         <h1 id="volume-percentage"></h1>
                         <!-- Volume slider -->
-                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value=".8">
-                        <h2 id="volume-label" >Volume</h2>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value=".7">
+                        <h2 id="volume-label">Volume</h2>
                     </div>
 
 
@@ -81,10 +88,11 @@
 
             </div>
 
-        </div>                                <div class="progress-wrapper mt-3">
-                                    <h1 id="current-time"></h1>
-                                    <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
-                                </div>
+        </div>
+        <div class="progress-wrapper mt-3">
+            <h1 id="current-time"></h1>
+            <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
+        </div>
     </div>
 
 

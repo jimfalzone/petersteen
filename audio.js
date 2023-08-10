@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update the progress bar width based on the current progress value
     function updateProgressBar(progress) {
-        progressBar.style.width = `${progress * 115}%`;
+        progressBar.style.width = `${progress * 96.9}%`;
     }
 
 

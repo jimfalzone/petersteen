@@ -87,9 +87,9 @@ button {
 
 /* Styles for the progress bar wrapper */
 .progress-wrapper {
-    width: 800px;
+    width: 900px;
     height: 400px;
-    background-image: url('./media/songimage3.png');
+    background-image: url('./media/songimage4.png');
     background-size:cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -99,14 +99,15 @@ button {
 
 /* Styling for the custom progress bar */
 .progress-bar {
-    width: 400px;
-    height: 385px;
+    width: 300px;
+    height: 368px;
     background-color: rgba(134,
         132,
-        191, 0.3);
+        191, 0.5);
     border: none;
     color: black;
-    margin-left: 4px;
+    margin-left: 0px;
+    margin-top: 29px;
 }
 
 
@@ -173,4 +174,9 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .container-fluid {
     margin-left: -300px;
+    min-width: 1850px;
+}
+
+.thegirl {
+    margin-left: 0em;
 }
