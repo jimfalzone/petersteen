@@ -41,11 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const formattedCurrentTime = formatTime(currentTime);
         const formattedDuration = formatTime(duration);
 
-        // Update the combined content for current time and duration
-        currentTimeDisplay.textContent = `${formattedCurrentTime} / ${formattedDuration}`;
 
-        // Update the progress bar value based on the current time and duration
-        progressBar.value = currentTime / duration;
     }
 
     // Update the current time display and progress bar at regular intervals
@@ -57,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update the progress bar width based on the current progress value
     function updateProgressBar(progress) {
-        progressBar.style.width = `${progress * 100}%`;
+        progressBar.style.width = `${progress * 115}%`;
     }
 
 
@@ -132,13 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Update the gainNode with the new volume value
         gainNode.gain.value = volumeValue;
-
-        // Calculate the percentage value based on the volume position
-        // const percentageValue = Math.round(volumeValue * 100);
-
-        // Update the volume percentage display
-        // const volumePercentage = document.getElementById('volume-percentage');
-        // volumePercentage.textContent = `${percentageValue}%`;
     }
 
     // Add an event listener for the 'input' event on the volume slider
@@ -148,31 +137,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Trigger the initial update to display the default volume percentage (100%)
     updateVolume.call(volumeSlider);
 
-    // Create a PannerNode for spatial audio positioning (panning)
-    const pannerNode = audioContext.createPanner();
-    audioSource.connect(pannerNode);
-    pannerNode.connect(gainNode);
-    pannerNode.panningModel = 'equalpower';
-
     // Function to update the panning and percentage display when the panning slider is changed
     function updatePanning() {
         const panningValue = parseFloat(this.value);
         pannerNode.setPosition(panningValue, 0, 1 - Math.abs(panningValue));
-
-        // Calculate the percentage value based on the panning position
-        const percentageValue = Math.round(panningValue * 100);
-
-        // Update the panning percentage display
-        const panningPercentage = document.getElementById('panning-percentage');
-        panningPercentage.textContent = `${percentageValue}%`;
     }
 
     // Add an event listener for the 'input' event on the panning slider
     const panningSlider = document.getElementById('panning-slider');
-    panningSlider.addEventListener('input', updatePanning);
 
-    // Trigger the initial update to display the default panning percentage (0%)
-    updatePanning.call(panningSlider);
+
+
 
     // Get the reference to the canvas element
     const canvas = document.getElementById('waveform');
@@ -224,17 +199,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start drawing the waveform
     drawWaveform();
 });
-
-
-
-
-
-// Function to log the Y-axis position of the DOM element on scroll
-function logScrollPosition() {
-    const element = document.documentElement; // Replace with the desired DOM element if needed
-    const yPosition = element.scrollTop || window.pageYOffset;
-    console.log('Y-axis position:', yPosition);
-}
-
-// Attach the scroll event listener to the window
-window.addEventListener('scroll', logScrollPosition);
